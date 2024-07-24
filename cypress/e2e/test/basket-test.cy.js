@@ -22,6 +22,5 @@ describe('Basket Test', () => {
         productListPage
         .firstProductClick()
         .clickOverlay();
-        
     })
 })
