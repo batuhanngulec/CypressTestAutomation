@@ -10,7 +10,7 @@ class LoginPage{
         return this;
     }
     fillPassword(value){
-        cy.get("[id='login-password-input']").type(value);
+        cy.get("[id='login-password-input']").type(value,{delay:100});
         return this
     }
     clickLogin(){
