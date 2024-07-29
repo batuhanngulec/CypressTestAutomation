@@ -7,9 +7,20 @@ describe ('Customer Actions', () => {
     const loginCustomer = new LoginCustomer();
     const addToChart = new AddToChart();
     const makePurchase = new MakePurchase();
+    // -------------------------------------------------------------------------------------------------// 
+    // Test case: Successful Register
+    // Objective: To verify that a user can successfully Register 
+    // Test Steps:
+    // Open the website.
+    // Click SignUp
+    // Enter a valid username (e.g., 'batuhangulec7').
+    // Enter the corresponding valid password (e.g., 'batuhangulec777').
+    // Click the register button.
+    // Expected Result: The user should be successfully register in and redirected to the home page.
     it('Register Success',() =>{
         loginCustomer.visit().signUp("batuhangulec7","batuhangulec777");
     })
+    // -------------------------------------------------------------------------------------------------// 
     it('Register UnSuccess',() =>{
         loginCustomer.visit().signUp("batuhangulec7","batuhangulec777");
         loginCustomer.javascriptAlert("This user already exist.");

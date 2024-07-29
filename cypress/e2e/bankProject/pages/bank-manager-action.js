@@ -5,11 +5,11 @@ class ManagerAction{
         return this;
     }
 
-    addCustomer(){
+    addCustomer(fname,lname,post){
         cy.get("[ng-click='addCust()']").click();
-        cy.get("[ng-model='fName']").type('Batuhan');
-        cy.get("[ng-model='lName']").type('Güleç');
-        cy.get("[ng-model='postCd']").type('0700');
+        cy.get("[ng-model='fName']").type(fname);
+        cy.get("[ng-model='lName']").type(lname);
+        cy.get("[ng-model='postCd']").type(post);
         cy.wait(1000);
         cy.get("[class='btn btn-default']").click();
         cy.wait(1000);
@@ -24,6 +24,21 @@ class ManagerAction{
         cy.get("#currency").select('Dollar');
         cy.get("[type='submit']").click();
         return this;
+    }
+    deleteAccount(name, surname){
+        cy.get("[ng-class='btnClass3']").click();
+        cy.get('tbody')
+          .contains('tr', name)
+          .contains('tr', surname)
+          .within(() => {
+              cy.get('button')
+                .contains('Delete')
+                .click();
+          });
+
+        cy.get('tbody')
+          .should('not.contain', name)
+          .and('not.contain', surname);
     }
 
 }
