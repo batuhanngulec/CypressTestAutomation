@@ -51,9 +51,18 @@ Each project contains a variety of test cases to ensure the reliability of the f
     ```bash
     git clone https://github.com/batuhanngulec/CypressTestAutomation.git
     ```
-2. Install the dependencies:
+2. Navigate to the project directory:
+    ```bash
+    cd your-repository
+    ```
+3. Install the project dependencies:
     ```bash
     npm install
+    ```
+
+    If Cypress is not already listed in your `package.json`, add it by running:
+    ```bash
+    npm install cypress --save-dev
     ```
 
 ### Running the Tests
