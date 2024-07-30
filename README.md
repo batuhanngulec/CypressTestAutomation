@@ -4,22 +4,22 @@ This repository contains automated test cases for the E-Commerce, Bank Project, 
 ## Projects Overview
 
 ### Bank Project
-The Bank Project simulates an online banking application with functionalities including user registration, login, and account management. It includes CRUD operations for managing user accounts and transactions.
+[The Bank Project](https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login "The Bank Project") simulates an online banking application with functionalities including user registration, login, and account management. It includes CRUD operations for managing user accounts and transactions.
 
 ### E-Commerce
-The E-Commerce project tests the functionalities of an online shopping platform. It includes user registration, login, product browsing, adding products to the cart, and checkout processes.
+[The E-Commerce](https://www.demoblaze.com "The E-Commerce") project tests the functionalities of an online shopping platform. It includes user registration, login, product browsing, adding products to the cart, and checkout processes.
 
 ### Hotel Reservation
 The Hotel Reservation project focuses on booking functionalities for hotels. Users can search for hotels, view details, make reservations, and manage their bookings.
 
 ### Petstore API
-The Petstore API project includes testing CRUD operations for managing pet information. It tests API endpoints for creating, reading, updating, and deleting pet data, as well as uploading images for pets.
+[The Petstore API](https://petstore.swagger.io "The Petstore API") project includes testing CRUD operations for managing pet information. It tests API endpoints for creating, reading, updating, and deleting pet data, as well as uploading images for pets.
 
 ### SwagLabs
-The SwagLabs project tests an online store platform's functionalities. It includes user registration, login, browsing products, adding to the cart, and performing checkout.
+[The SwagLabs](https://www.saucedemo.com "The SwagLabs") project tests an online store platform's functionalities. It includes user registration, login, browsing products, adding to the cart, and performing checkout.
 
 ### Trendyol
-The Trendyol project focuses on an online marketplace's functionalities. It tests user registration, login, product browsing, adding to the cart, and checkout processes.
+[The Trendyol](https://www.trendyol.com/giris "The Trendyol") project focuses on an online marketplace's functionalities. It tests user registration, login, product browsing, adding to the cart, and checkout processes.
 
 ## Test Cases
 
