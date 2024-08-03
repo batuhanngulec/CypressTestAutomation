@@ -46,7 +46,7 @@ describe ('Login Customer', () => {
         action.errorWithDraw();
     })
 
-    it.only('Customer Add Withdraw Successful', () =>{
+    it('Customer Add Withdraw Successful', () =>{
         loginCustomer.visit()
         .clickCustomerButton()
         .selectAccount("Harry Potter");

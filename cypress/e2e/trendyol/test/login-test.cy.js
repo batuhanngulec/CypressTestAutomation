@@ -8,7 +8,7 @@ describe('Login Test', () => {
 
   it.only('Login Success', () => {
       loginPage.visit()
-        .fillEmail("batuhangulec23@yandex.com")
+        .fillEmail("demo@yandex.com") // fake mail 
         .fillPassword("TestAutomationDemo123456")
         .clickLogin();
       homePage.checkLogin("Hesabım");
@@ -16,7 +16,7 @@ describe('Login Test', () => {
 
   it('Login UnSuccess', () => {
       loginPage.visit()
-        .fillEmail("batuhangulec23@yandex.comm")
+        .fillEmail("demo@yandex.comm") // fake mail 
         .fillPassword("TestAutomationDemo123456")
         .clickLogin()
         .errorMessageDisplayedControl("E-posta adresiniz ve/veya şifreniz hatalı.");
@@ -25,7 +25,7 @@ describe('Login Test', () => {
 
     it('Incorrect Psswd', () => {
       loginPage.visit()
-        .fillEmail("batuhangulec23@yandex.com")
+        .fillEmail("demo@yandex.com")
         .fillPassword("TestAutomationDemo1234567")
         .clickLogin()
         .errorMessageControl("Lütfen geçerli bir e-posta adresi giriniz.");

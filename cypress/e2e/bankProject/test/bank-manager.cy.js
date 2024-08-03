@@ -23,7 +23,7 @@ describe ('Bank Manager Actions', () => {
     })
     // -------------------------------------------------------------------------------------------------// 
     // remove customer succes and check if delete customer
-    it.only('Bank Manager Remove Customer', () =>{
+    it('Bank Manager Remove Customer', () =>{
         managerAction.visit()
             .deleteAccount("Harry","Potter");
 
